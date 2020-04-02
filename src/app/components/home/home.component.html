@@ -3,16 +3,42 @@
     <hr>
     <h4>Published By Kevin Perera</h4>
 
-    <div><p>Updated Time: {{update_date_time}}</p></div>
+    <div><p>Updated Time: 
+            <span class="badge badge-warning">{{update_date_time}}</span></p></div>
     <hr>
-    <div><p>Local new Cases : {{local_new_cases}}</p></div>
-    <div><p>Local Total Cases : {{local_total_cases}}</p></div>
-    <div><p>Local Total individuals in hospital : {{local_total_number_of_individuals_in_hospitals}}</p></div>
-    <div><p>Local Total Deaths : {{local_deaths}}</p></div>
-    <div><p>Local Total Recovered : {{local_recovered}}</p></div>
-    <hr>
-    <div><p>Global New Cases : {{global_new_cases}}</p></div>
-    <div><p>Global Total Cases : {{global_total_cases}}</p></div>
-    <div><p>Global Deaths : {{global_deaths}}</p></div>
-    <div><p>Global Recovered : {{global_recovered}}</p></div>
+    <div class="jumbotron">
+        <h5 class="display-10">Local Updates</h5><hr>
+        <div class="local-content-body">
+            <div><p>Local new Cases : {{local_new_cases}}</p></div>
+            <div><p>Local Total Cases : {{local_total_cases}}</p></div>
+            <div><p>Local Total individuals in hospital : {{local_total_number_of_individuals_in_hospitals}}</p></div>
+            <div><p>Local Total Deaths : {{local_deaths}}</p></div>
+            <div><p>Local Total Recovered : {{local_recovered}}</p></div>
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <h5 class="display-10">Local Updates</h5><hr>
+            <div class="global-content-body">
+            <div><p>Global New Cases : {{global_new_cases}}</p></div>
+            <div><p>Global Total Cases : {{global_total_cases}}</p></div>
+            <div><p>Global Deaths : {{global_deaths}}</p></div>
+            <div><p>Global Recovered : {{global_recovered}}</p></div>
+        </div>
+    </div>
+
+    <div class="card-group">
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-success">{{local_new_cases}}</div>
+                <div class="card-body text-success">
+                <p class="card-text">Local new Cases</p>
+                </div>
+        </div>
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-success">{{local_total_cases}}</div>
+                <div class="card-body text-success">
+                <p class="card-text">Local Total Cases</p>
+                </div>
+        </div>
+    </div>
 </div>

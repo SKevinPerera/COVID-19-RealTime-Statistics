@@ -1,4 +1,11 @@
 .background {
-    background-color: black;
-    color: white;
+    padding-top: 100px;
+}
+
+.local-content-body {
+    font-size: 14px;
+}
+
+.global-content-body {
+    font-size: 14px;
 }
