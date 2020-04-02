@@ -4,16 +4,26 @@
     <h4>Published By Kevin Perera</h4>
 
     <div><p>Updated Time: 
-            <span class="badge badge-warning">{{update_date_time}}</span></p></div>
+            <span class="badge badge-warning">
+                {{update_date_time}}
+                <div class="spinner-border text-info" style="width: 1rem; height: 1rem;" role="status">
+                        <span class="sr-only">Loading...</span>
+                </div>
+            </span>
+        </p>
+    </div>
+
     <hr>
     <div class="jumbotron">
         <h5 class="display-10">Local Updates</h5><hr>
         <div class="local-content-body">
-            <div><p>Local new Cases : {{local_new_cases}}</p></div>
-            <div><p>Local Total Cases : {{local_total_cases}}</p></div>
-            <div><p>Local Total individuals in hospital : {{local_total_number_of_individuals_in_hospitals}}</p></div>
-            <div><p>Local Total Deaths : {{local_deaths}}</p></div>
-            <div><p>Local Total Recovered : {{local_recovered}}</p></div>
+            <div >Local new Cases : 
+                <span class="badge badge-primary badge-pill">{{local_new_cases}}</span>
+            </div>
+            <div>Local Total Cases : {{local_total_cases}}</div>
+            <div>Local Total individuals in hospital : {{local_total_number_of_individuals_in_hospitals}}</div>
+            <div>Local Total Deaths : {{local_deaths}}</div>
+            <div>Local Total Recovered : {{local_recovered}}</div>
         </div>
     </div>
 
@@ -41,4 +51,29 @@
                 </div>
         </div>
     </div>
+
+    <div class="temp-body">
+        <div class="box">
+            <h5 class="display-10">Local Updates</h5>
+            <ul>
+                <li><div >Local new Cases : 
+                        <span class="badge badge-primary badge-pill">{{local_new_cases}}</span>
+                    </div>
+                </li>
+                <li><div>Local Total Cases : 
+                    <span class="badge badge-primary badge-pill">{{local_total_cases}}</span>
+                </div></li>
+                <li><div>Local Total individuals in hospital : 
+                    <span class="badge badge-primary badge-pill">{{local_total_number_of_individuals_in_hospitals}}</span>
+                </div></li>
+                <li><div>Local Total Deaths : 
+                    <span class="badge badge-primary badge-pill">{{local_deaths}}</span>
+                </div></li>
+                <li><div>Local Total Recovered : 
+                    <span class="badge badge-primary badge-pill">{{local_recovered}}</span>
+                </div></li>
+            </ul>
+        </div>
+    </div>
+
 </div>
