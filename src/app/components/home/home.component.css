@@ -1,7 +1,5 @@
 .background {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    
 }
 
 .local-content-body {
@@ -11,7 +9,6 @@
 .global-content-body {
     font-size: 14px;
 }
-
 
 
 
@@ -48,7 +45,7 @@
 
 .box ul {
     position: relative;
-    background: #fff;
+    margin-left: -40px;
 }
 
 .box ul li {
