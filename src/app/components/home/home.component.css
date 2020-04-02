@@ -4,6 +4,10 @@
     display: flex;
 }
 
+.gov-contact{
+    max-width: auto;
+}
+
 .update-timer {
     justify-content: center;
     align-items: center;
