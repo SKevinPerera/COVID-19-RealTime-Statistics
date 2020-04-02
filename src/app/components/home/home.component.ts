@@ -25,6 +25,8 @@ export class HomeComponent implements OnInit {
   local_total_number_of_individuals_in_hospitals: string;
   local_deaths: string;
   local_recovered: string;
+  local_active_cases: string;
+  local_new_deaths: string;
 
   update_date_time : string;
 
@@ -49,6 +51,8 @@ export class HomeComponent implements OnInit {
         this.local_total_number_of_individuals_in_hospitals = data.data.local_total_number_of_individuals_in_hospitals;
         this.local_deaths = data.data.local_deaths;
         this.local_recovered = data.data.local_recovered;
+        this.local_active_cases = data.data.local_active_cases;
+        this.local_new_deaths = data.data.local_new_deaths;
 
         //Global INFO
         this.global_new_cases = data.data.global_new_cases;

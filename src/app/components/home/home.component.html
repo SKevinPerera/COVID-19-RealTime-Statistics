@@ -1,16 +1,28 @@
 <div class="background">
-    <h2>COVID-19 Real Time Statistics</h2>
-    <hr>
-    <h4>Published By Kevin Perera</h4>
-
-    <div><p>Updated Time: 
-            <span class="badge badge-warning">
-                {{update_date_time}}
-                <div class="spinner-border text-info" style="width: 1rem; height: 1rem;" role="status">
-                        <span class="sr-only">Loading...</span>
+    <div class="card text-center">
+        <div class="card-header">
+            <h2>COVID-19 Real Time Statistics</h2>
+            <hr>
+            Source
+        </div>
+        <div class="card-body">
+            <div class="gov-header">
+                <div class="gov-contact">
+                    <Img src="https://hpb.health.gov.lk/assets/img/logo.png"> 
                 </div>
-            </span>
-        </p>
+            </div>
+            <a href="https://hpb.health.gov.lk/en/api-documentation" class="btn btn-light">https://hpb.health.gov.lk/en/api-documentation</a>
+        </div>
+        <div class="card-footer text-muted">
+            <div class="update-timer">Updated Time: 
+                <span class="badge badge-warning">
+                    {{update_date_time}}
+                    <div class="spinner-border text-info" style="width: 1rem; height: 1rem;" role="status">
+                            <span class="sr-only">Loading...</span>
+                    </div>
+                </span> 
+            </div>
+        </div>
     </div>
 
     <hr>
@@ -52,52 +64,96 @@
         </div>
     </div> -->
 
-    
-    <div class="temp-body">
-        <div class="box">
-            <h5 class="display-10">Local Updates</h5>
-            <ul>
-                <li><div >Local new Cases : 
-                        <span class="badge badge-primary badge-pill">{{local_new_cases}}</span>
-                    </div>
-                </li>
-                <li><div>Local Total Cases : 
-                    <span class="badge badge-primary badge-pill">{{local_total_cases}}</span>
-                </div></li>
-                <li><div>Local Total individuals in hospital : 
-                    <span class="badge badge-primary badge-pill">{{local_total_number_of_individuals_in_hospitals}}</span>
-                </div></li>
-                <li><div>Local Total Deaths : 
-                    <span class="badge badge-primary badge-pill">{{local_deaths}}</span>
-                </div></li>
-                <li><div>Local Total Recovered : 
-                    <span class="badge badge-primary badge-pill">{{local_recovered}}</span>
-                </div></li>
-            </ul>
-        </div>
-    </div>
-
-    <hr>
-
-    <div class="temp-body">
+    <div class="main-content">
+        <div class="temp-body">
             <div class="box">
-                <h5 class="display-10">Local Updates</h5>
+                <h5 class="display-10">Local Updates
+                <div class="gov-contact">
+                        <Img src="./../../../assets/srilankaFlag.gif" style="width:40px;height:30px;"> 
+                </div></h5>
                 <ul>
-                    <li><div >Global New Cases :  
-                            <span class="badge badge-primary badge-pill">{{global_new_cases}}</span>
+                    <li><div >Recent Reported Patients : 
+                            <span class="badge badge-primary badge-pill">{{local_new_cases}}</span>
                         </div>
                     </li>
-                    <li><div>Global Total Cases :
-                        <span class="badge badge-primary badge-pill">{{global_total_cases}}</span>
+                    <li><div>Total Reported Patients : 
+                        <span class="badge badge-danger badge-pill">{{local_total_cases}}</span>
                     </div></li>
-                    <li><div>Global Deaths :
-                        <span class="badge badge-primary badge-pill">{{global_deaths}}</span>
+                    <li><div>Total Recovered Patients : 
+                        <span class="badge badge-success badge-pill">{{local_recovered}}</span>
                     </div></li>
-                    <li><div>Global Recovered : 
-                        <span class="badge badge-primary badge-pill">{{global_recovered}}</span>
+                    <li><div>Total Suspicious patients in hospital : 
+                            <span class="badge badge-info badge-pill">{{local_total_number_of_individuals_in_hospitals}}</span>
+                    </div></li>
+                    <li><div>Total Active Cases : 
+                            <span class="badge badge-warning badge-pill">{{local_active_cases}}</span>
+                    </div></li>
+                    <li><div>Total Reported Deaths : 
+                            <span class="badge badge-danger badge-pill">{{local_deaths}}</span>
+                        </div></li>
+                    <li><div>Recent Reported Deaths : 
+                            <span class="badge badge-dark badge-pill">{{local_new_deaths}}</span>
                     </div></li>
                 </ul>
             </div>
         </div>
 
+        <hr>
+
+        <div class="temp-body">
+                <div class="box">
+                    <h5 class="display-10">Local Updates
+                    <div class="gov-contact">
+                        <Img src="./../../../assets/global.gif" style="width:40px;height:40px;"> 
+                    </div></h5>
+                    <ul>
+                        <li><div >Recent Reported Patients :  
+                                <span class="badge badge-primary badge-pill">{{global_new_cases}}</span>
+                            </div>
+                        </li>
+                        <li><div>Total Reported Patients :
+                            <span class="badge badge-danger badge-pill">{{global_total_cases}}</span>
+                        </div></li>
+                        <li><div>Total Reported Deaths :
+                            <span class="badge badge-dark badge-pill">{{global_deaths}}</span>
+                        </div></li>
+                        <li><div>Total Recovered Patients : 
+                            <span class="badge badge-success badge-pill">{{global_recovered}}</span>
+                        </div></li>
+                    </ul>
+                </div>
+        </div>
+    </div>
 </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+        <!-- Footer Elements -->
+        <div class="container">
+      
+          <!-- Grid row-->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col-md-12 py-5">
+                <div class="mb-5 flex-center">
+                    Made by Kevin Perera
+                </div>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row-->
+      
+        </div>
+        <!-- Footer Elements -->
+      
+        
+        <div class="footer-copyright text-center py-3">New features to arrive. Stay tuned!
+          <!-- <a href="https://mdbootstrap.com/"> MDBootstrap.com</a> -->
+        </div>
+        
+      
+      </footer>
+      <!-- Footer -->
