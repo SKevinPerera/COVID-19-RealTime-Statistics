@@ -14,7 +14,7 @@
     </div>
 
     <hr>
-    <div class="jumbotron">
+    <!-- <div class="jumbotron">
         <h5 class="display-10">Local Updates</h5><hr>
         <div class="local-content-body">
             <div >Local new Cases : 
@@ -30,14 +30,14 @@
     <div class="jumbotron">
         <h5 class="display-10">Local Updates</h5><hr>
             <div class="global-content-body">
-            <div><p>Global New Cases : {{global_new_cases}}</p></div>
-            <div><p>Global Total Cases : {{global_total_cases}}</p></div>
-            <div><p>Global Deaths : {{global_deaths}}</p></div>
-            <div><p>Global Recovered : {{global_recovered}}</p></div>
+            <div>Global New Cases : {{global_new_cases}}</div>
+            <div>Global Total Cases : {{global_total_cases}}</div>
+            <div>Global Deaths : {{global_deaths}}</div>
+            <div>Global Recovered : {{global_recovered}}</div>
         </div>
-    </div>
+    </div> -->
 
-    <div class="card-group">
+    <!-- <div class="card-group">
         <div class="card border-success mb-3" style="max-width: 18rem;">
                 <div class="card-header bg-transparent border-success">{{local_new_cases}}</div>
                 <div class="card-body text-success">
@@ -50,7 +50,7 @@
                 <p class="card-text">Local Total Cases</p>
                 </div>
         </div>
-    </div>
+    </div> -->
 
     
     <div class="temp-body">
@@ -76,5 +76,28 @@
             </ul>
         </div>
     </div>
+
+    <hr>
+
+    <div class="temp-body">
+            <div class="box">
+                <h5 class="display-10">Local Updates</h5>
+                <ul>
+                    <li><div >Global New Cases :  
+                            <span class="badge badge-primary badge-pill">{{global_new_cases}}</span>
+                        </div>
+                    </li>
+                    <li><div>Global Total Cases :
+                        <span class="badge badge-primary badge-pill">{{global_total_cases}}</span>
+                    </div></li>
+                    <li><div>Global Deaths :
+                        <span class="badge badge-primary badge-pill">{{global_deaths}}</span>
+                    </div></li>
+                    <li><div>Global Recovered : 
+                        <span class="badge badge-primary badge-pill">{{global_recovered}}</span>
+                    </div></li>
+                </ul>
+            </div>
+        </div>
 
 </div>

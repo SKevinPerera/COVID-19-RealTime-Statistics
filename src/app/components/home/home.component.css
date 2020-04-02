@@ -20,17 +20,14 @@
 
 
 .temp-body {
-    
-
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: #f6f6f6;
+    /* background: #f6f6f6; */
 }
 
 .box {
-    width: 300px;
+    width: 350px;
 }
 
 .box h5 {
