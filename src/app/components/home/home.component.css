@@ -4,9 +4,13 @@
     display: flex;
 }
 
-.gov-contact{
-    max-width: auto;
+.gov-contact img{
+    max-width: 100%;
 }
+
+/* .img {
+    max-width: 100%;
+} */
 
 .update-timer {
     justify-content: center;
